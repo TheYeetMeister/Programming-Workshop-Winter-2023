@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Space))
         {
-            
+            Instantiate(BulletPrefab, new Vector3(transform.postion.x, transform.postion.y + 1, transoform.position.z), Quaternion.identity, null);
         }
     }
 }
