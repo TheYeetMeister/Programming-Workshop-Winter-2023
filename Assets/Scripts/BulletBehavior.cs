@@ -11,7 +11,7 @@ public class BulletBehavior: MonoBehaviour
     void Update()
     {
         //Move
-        Vector2 moveDirection = Vector2(0, 1);
-        transform.position += movementDIrection * Time.deltaTime * MoveSpeed;
+        Vector3 moveDirection = Vector3.up;
+        transform.position += moveDirection * Time.deltaTime * BulletSpeed;
     }
 }
