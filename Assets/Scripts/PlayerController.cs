@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     public float MoveSpeed;
     public float MinX;
     public float MaxX;
+    public GameObject BulletPrefab;
 
     void Update()
     {
