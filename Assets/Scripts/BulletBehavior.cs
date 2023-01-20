@@ -11,5 +11,6 @@ public class BulletBehavior: MonoBehaviour
     void Update()
     {
         //Move
+        Vector2 moveDirection = Vector2(0, 1)
     }
 }
