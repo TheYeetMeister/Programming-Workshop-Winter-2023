@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class BulletBehavior: MonoBehaviour
 {
     public float BulletSpeed;
     // Start is called before the first frame update
