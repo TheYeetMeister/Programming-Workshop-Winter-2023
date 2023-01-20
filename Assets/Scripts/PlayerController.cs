@@ -26,5 +26,10 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate (moveDir * MoveSpeed * Time.deltaTime);
+        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            
+        }
     }
 }
