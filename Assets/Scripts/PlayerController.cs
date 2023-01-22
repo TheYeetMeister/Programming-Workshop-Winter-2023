@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
                 Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
                 deBounce = 5;
             }
+        } else {
+            deBounce -= Time.deltaTime;
         }
     }
 }
