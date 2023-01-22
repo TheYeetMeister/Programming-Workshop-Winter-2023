@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour
         movingLeft = Random.Range (0.0f, 1.0f) < 0.5f;
     }
 
+    void onCollisionEnter(Collision collision)
+    {
+        
+    }
+
     private void Update ()
     {
         if (transform.position.y > TargetY)
