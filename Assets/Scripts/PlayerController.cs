@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public float MinX;
     public float MaxX;
     public GameObject BulletPrefab;
+    private int deBounce;
 
     void Update()
     {
