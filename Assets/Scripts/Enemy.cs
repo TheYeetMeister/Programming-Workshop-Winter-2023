@@ -21,12 +21,12 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            Destroy(player)
+            Destroy(player);
         }
 
         if (collision.gameObject == bullet) 
         {
-            Destroy(gameObject)
+            Destroy(gameObject);
         }
     }
 
