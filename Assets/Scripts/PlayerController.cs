@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
     public float MoveSpeed;
     public float MinX;
     public float MaxX;
-    public float MaxY;
     public GameObject BulletPrefab;
     private float deBounce = 0;
 
