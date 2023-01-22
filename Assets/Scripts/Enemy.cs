@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
         {
             Destroy(player)
         }
+
+        if (collision.gameObject == bullet) 
+        {
+
+        }
     }
 
     private void Update ()
