@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-
+            Destroy(player)
         }
     }
 
