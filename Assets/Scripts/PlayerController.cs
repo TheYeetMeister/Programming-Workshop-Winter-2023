@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         if (deBounce <= 0) {
             if (Input.GetKey(KeyCode.Space))
             {
-                Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
+                Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 0.3f, transform.position.z), Quaternion.identity);
                 deBounce = 0.5f;
             }
         } else {
