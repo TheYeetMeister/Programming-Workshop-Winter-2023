@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject == bullet) 
         {
-
+            Destroy(gameObject)
         }
     }
 
