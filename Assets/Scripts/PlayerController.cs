@@ -33,9 +33,11 @@ public class PlayerController : MonoBehaviour
 
     void HandleShooting()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
+        if (deBounce <= 0) {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
+            }
         }
     }
 }
