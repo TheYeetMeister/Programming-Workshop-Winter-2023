@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
         movingLeft = Random.Range (0.0f, 1.0f) < 0.5f;
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void oneTriggerEnter2d(Collision collision)
     {
         Debug.Log(collision);
         /*if (collision.gameObject == player)
