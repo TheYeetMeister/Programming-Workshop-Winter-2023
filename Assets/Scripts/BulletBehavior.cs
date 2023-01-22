@@ -15,7 +15,7 @@ public class BulletBehavior: MonoBehaviour
         transform.position += moveDirection * Time.deltaTime * BulletSpeed;
 
         if (transform.position.y > maxY) {
-
+            Destroy(gameObject);
         }
     }
 }
