@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour
     public float MoveSpeed;
     public float MinX;
     public float MaxX;
-    public gameObject player;
-    public gameobject bullet;
+    public GameObject player;
+    public GameObject bullet;
 
     bool movingLeft;
 
@@ -19,7 +19,10 @@ public class Enemy : MonoBehaviour
 
     void onCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == )
+        if (collision.gameObject == player)
+        {
+
+        }
     }
 
     private void Update ()
