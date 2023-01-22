@@ -14,8 +14,8 @@ public class BulletBehavior: MonoBehaviour
         Vector3 moveDirection = Vector3.up;
         transform.position += moveDirection * Time.deltaTime * BulletSpeed;
 
-        if (transform.position > maxY) {
-            
+        if (transform.position.y > maxY) {
+
         }
     }
 }
