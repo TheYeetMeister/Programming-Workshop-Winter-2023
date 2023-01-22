@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        HandleShooting();
     }
 
     void HandleMovement()
@@ -27,7 +28,10 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate (moveDir * MoveSpeed * Time.deltaTime);
-        
+    }
+
+    void HandleShooting()
+    {
         if (Input.GetKey(KeyCode.Space))
         {
             Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), Quaternion.identity);
