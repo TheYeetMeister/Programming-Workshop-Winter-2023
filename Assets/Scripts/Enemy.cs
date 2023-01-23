@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
     public float MoveSpeed;
     public float MinX;
     public float MaxX;
-    //public GameObject player;
+    public GameObject player;
     public GameObject bullet;
 
     bool movingLeft;
@@ -17,15 +17,9 @@ public class Enemy : MonoBehaviour
         movingLeft = Random.Range (0.0f, 1.0f) < 0.5f;
     }
 
-    private void oneTriggerEnter2d(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(collision);
-        /*if (collision.gameObject == player)
-        {
-            Destroy(player);
-        }*/
-
-        if (collision.gameObject == bullet) 
+        if (other.tag == "PlayerBullet") 
         {
             Destroy(gameObject);
         }
