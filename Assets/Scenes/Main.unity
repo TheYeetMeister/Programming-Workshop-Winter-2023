@@ -239,7 +239,6 @@ MonoBehaviour:
   MoveSpeed: 5
   MinX: -6
   MaxX: 6
-  MaxY: 6
   BulletPrefab: {fileID: 2326255680619375935, guid: c6c77e6c7f31823198e1be52e681d324,
     type: 3}
 --- !u!212 &891685206
