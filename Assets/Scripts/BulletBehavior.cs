@@ -23,7 +23,7 @@ public class BulletBehavior: MonoBehaviour
     {
         if (other.tag == "EnemyUnit")
         {
-            
+            Destroy(gameObject);
         }
     }
 }
